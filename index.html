@@ -14,7 +14,7 @@
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
-            <button class="btnLogin-popup">Login</button>
+            <button class="btnLogin-popup">Login</button> <!-- Memanggil fungsi myFunction saat tombol login diklik -->
         </nav>
     </header>
 
@@ -38,18 +38,19 @@
                 <div class="remember-forgot">
                     <label><input type="checkbox"> Remember me</label>
                 </div>
-                <button type="submit" class="btn" id="loginButton">Login</button>
+                <button type="submit" class="btn" id="loginButton" onclick="myFunction()">Login</button>
                 <div id="loginSuccessMessage" style="display: none;">Selamat! Anda berhasil login.</div>
             </form>
         </div>
     </div>
 
     <script src="main.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script>
         function myFunction() {
-            alert("Selamat, kamu berhasil login!!!")
+            alert("Selamat, kamu berhasil login!!!"); // Menampilkan alert saat berhasil login
         }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
